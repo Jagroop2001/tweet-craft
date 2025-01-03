@@ -7,6 +7,7 @@ Video Link : https://vimeo.com/1043260556?share=copy
 
 - **AI Tweet Generation**: Users provide a description, and the app generates a tweet based on the input.
 - **Gemini API Integration**: The app utilizes Gemini's API to process natural language descriptions and create tweets.
+- **Material-UI Integration**: The app uses Material-UI components for a modern and responsive user interface.
 
 ## Installation
 

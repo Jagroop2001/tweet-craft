@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { BsArrowRightCircle } from "react-icons/bs";
+import Button from '@mui/material/Button';
 
 export default function InteractiveForm() {
   const [tweet, setTweet] = useState<string | null>(null);
@@ -85,8 +86,10 @@ export default function InteractiveForm() {
               focus:border-transparent
             "
           />
-          <button
+          <Button
             type="submit"
+            variant="contained"
+            color="primary"
             className="
               absolute 
               bottom-2 
@@ -100,7 +103,7 @@ export default function InteractiveForm() {
             disabled={loading}
           >
             <BsArrowRightCircle size={30} />
-          </button>
+          </Button>
         </div>
       </form>
 
@@ -108,18 +111,22 @@ export default function InteractiveForm() {
         <div className="mt-6 text-white">
           <p className="text-lg">{tweet}</p>
           <div className="flex gap-4 mt-4">
-            <button
+            <Button
               onClick={handleCopy}
+              variant="contained"
+              color="primary"
               className="px-4 py-2 bg-blue-500 rounded-full text-white hover:bg-blue-400"
             >
               Copy
-            </button>
-            <button
+            </Button>
+            <Button
               onClick={handleRegenerate}
+              variant="contained"
+              color="secondary"
               className="px-4 py-2 bg-green-500 rounded-full text-white hover:bg-green-400"
             >
               Regenerate
-            </button>
+            </Button>
           </div>
         </div>
       )}
